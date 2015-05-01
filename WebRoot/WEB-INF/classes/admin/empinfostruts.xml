@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+		<package name="empInfo" extends="struts-default">
+			<action name="empInfo" class="com.eams.admin.action.EmpInfoAction">
+				<result name="showempinfo">/admin/emp/showempinfo.jsp</result>
+				<result name="empinfofalse">/admin/emp/empinfofalse.jsp</result>
+				<result name="empinfosuccess">/admin/emp/empinfosuccess.jsp</result>
+				<result name="updateempinfo">/admin/emp/updateempinfo.jsp</result>
+				<result name="addempinfo">/admin/emp/addempinfo.jsp</result>
+				<result name="emppage">/admin/emp/emppage.jsp</result>
+				<result name="page">/page.jsp</result>
+				<result name="myupdateempinfo">/admin/emp/myupdateempinfo.jsp</result>
+				<param name="savePath">/photo</param>  
+			</action>
+		</package>
+</struts>

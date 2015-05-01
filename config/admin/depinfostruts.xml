@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+		<package name="depInfo" extends="struts-default">
+			<action name="depInfo" class="com.eams.admin.action.DepInfoAction">
+				<result name="showdepinfo">/admin/dep/showdepinfo.jsp</result>
+				<result name="depinfofalse">/admin/dep/depinfofalse.jsp</result>
+				<result name="depinfosuccess">/admin/dep/depinfosuccess.jsp</result>
+				<result name="updatedepinfo">/admin/dep/updatedepinfo.jsp</result>
+				<result name="adddepinfo">/admin/dep/adddepinfo.jsp</result>
+				<result name="deppage">/admin/dep/deppage.jsp</result>
+			</action>
+		</package>
+</struts>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+		<package name="teacherInfo" extends="struts-default">
+			<action name="teacherInfo" class="TeaInfoAction">
+				<result name="success">/Teacher Info/adm_showalltea.jsp</result>
+				<result name="tea_success">/Teacher Info/tea_showalltea.jsp</result>
+				<result name="add_default">/teacher/teacherInfo/add_default.jsp</result>
+				<result name="update">/Teacher Info/adm_updateteainfo.jsp</result>
+				<result name="addTeacher">/teacher/teacherInfo/addteainfo.jsp</result>
+				<result name="default">/teacher/teacherInfo/check_default.jsp</result>
+				<result name="check_success">/Teacher Info/tea_personal page.jsp</result>
+				<result name="tea_updateteainfo">/Teacher Info/tea_updateteainfo.jsp</result>
+				<result name="check_success_admin">/Teacher Info/adm_showalltea.jsp</result>
+				<result name="mycourse">/Teacher Info/tea_mycourse.jsp</result>
+				<result name="allcourse">/Teacher Info/tea_allcourse.jsp</result>
+				<result name="adm_foraddteainfo">/Teacher Info/adm_foraddtea.jsp</result>
+				<param name="savePath">/tea_photo</param>  
+			
+			</action>
+		</package>
+</struts>

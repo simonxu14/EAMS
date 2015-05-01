@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+		<package name="powerInfo" extends="struts-default">
+			<action name="powerInfo" class="com.eams.admin.action.PowerInfoAction">
+				<result name="showpowerinfo">/admin/power/showpowerinfo.jsp</result>
+				<result name="powerinfofalse">/admin/power/powerinfofalse.jsp</result>
+				<result name="powerinfosuccess">/admin/power/powerinfosuccess.jsp</result>
+				<result name="updatepowerinfo">/admin/power/updatepowerinfo.jsp</result>
+				<result name="powerpage">/admin/power/powerpage.jsp</result>
+			</action>
+		</package>
+</struts>

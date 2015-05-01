@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">    
+
+<struts> 
+		<package name="student" extends="struts-default">
+			<action name="student" class="stuAction">
+				<!-- 动态设置Action中的savePath属性的值 -->  
+           		<param name="savePath">/stu_photo</param>  
+				<result name="success">/student/studentIndex.jsp</result>
+				<result name="default">/student/fail.jsp</result>
+				<result name="studentCourse">/student/AllStuCourse_student.jsp</result>
+				<result name="studentIndex">/student/personal page_student.jsp</result>
+				<result name="allCourses">/student/AllCourse_student.jsp</result>
+				<result name="allStudent">/Manager/allStudent_admin.jsp</result>
+				<result name="stuCheck">/student/stu_check.jsp</result>
+				<result name="stuManageIndex">/Manager/student_manage.jsp</result>
+				<result name="queryStudent">/Manager/query_student.jsp</result>
+				<result name="allConsultStu">/Manager/allConsultStudent_admin.jsp</result>
+				<result name="updateStuInfo">/Manager/modify_student.jsp</result>
+				<result name="consultSuccess">/Manager/personalPage_admin.jsp</result>
+				<result name="addStudentUpload">/Manager/add_student.jsp</result>
+				<result name="updateStudentInfo">/student/personal page_student.jsp</result>
+				<result name="showStudentInfoPage">/student/updateStuInfo_student.jsp</result>
+				<result name="myconsultSuccess">/index.jsp</result>
+			</action>
+		</package>
+</struts>

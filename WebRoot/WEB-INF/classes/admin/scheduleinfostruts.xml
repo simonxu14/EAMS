@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+		<package name="scheduleInfo" extends="struts-default">
+			<action name="scheduleInfo" class="com.eams.admin.action.ScheduleInfoAction">
+				<result name="showscheduleinfo">/admin/schedule/showscheduleinfo.jsp</result>
+				<result name="scheduleinfofalse">/admin/schedule/scheduleinfofalse.jsp</result>
+				<result name="scheduleinfosuccess">/admin/schedule/scheduleinfosuccess.jsp</result>
+				<result name="updatescheduleinfo">/admin/schedule/updatescheduleinfo.jsp</result>
+				<result name="addscheduleinfo">/admin/schedule/addscheduleinfo.jsp</result>
+				<result name="schedulepage">/admin/schedule/schedulepage.jsp</result>
+				<result name="myschedulepage">/admin/schedule/myschedulepage.jsp</result>
+			</action>
+		</package>
+</struts>

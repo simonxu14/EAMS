@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+		<package name="postInfo" extends="struts-default">
+			<action name="postInfo" class="com.eams.admin.action.PostInfoAction">
+				<result name="showpostinfo">/admin/post/showpostinfo.jsp</result>
+				<result name="postinfofalse">/admin/post/postinfofalse.jsp</result>
+				<result name="postinfosuccess">/admin/post/postinfosuccess.jsp</result>
+				<result name="updatepostinfo">/admin/post/updatepostinfo.jsp</result>
+				<result name="addpostinfo">/admin/post/addpostinfo.jsp</result>
+				<result name="postpage">/admin/post/postpage.jsp</result>
+			</action>
+		</package>
+</struts>

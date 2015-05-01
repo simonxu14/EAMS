@@ -1,0 +1,13 @@
+.validator-message{
+    display: block;
+    color: rgb(221,75,57);
+}
+
+.validator-error{
+    border: 1px solid rgb(221,75,57);
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus{
+    border: 1px solid rgb(61,162,217);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2) inset;
+}

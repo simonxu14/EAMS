@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+		<package name="gradeInfo" extends="struts-default">
+			<action name="gradeInfo" class="com.eams.admin.action.GradeInfoAction">
+				<result name="showgradeinfo">/admin/grade/showgradeinfo.jsp</result>
+				<result name="gradeinfofalse">/admin/grade/gradeinfofalse.jsp</result>
+				<result name="gradeinfosuccess">/admin/grade/gradeinfosuccess.jsp</result>
+				<result name="updategradeinfo">/admin/grade/updategradeinfo.jsp</result>
+				<result name="gradepage">/admin/grade/gradepage.jsp</result>
+			</action>
+		</package>
+</struts>

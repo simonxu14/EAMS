@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+		<package name="teacherLevel" extends="struts-default">
+			<action name="teacherLevel" class="TeaLevAction">
+				<result name="success">Teacher Level/showtealevel.jsp</result>
+				<result name="add_default">teacher/teacherLevel/add_default.jsp</result>
+				<result name="update">Teacher Level/updatetealevel.jsp</result>
+			</action>
+
+		</package>
+</struts>

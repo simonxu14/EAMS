@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+		<!-- 开发者模式 -->
+		<constant name="struts.devMode" value="true"></constant>
+		<!-- <constant name="struts.objectFactory" value="spring"></constant> -->
+		<!-- 动态方法调用 -->
+		<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+		<!-- 用户模块struts配置 -->
+		
+<!--  		<package name="json" namespace="/" extends="struts-default">
+ 		<result-types>
+   			 <result-type name="json" class="org.apache.struts2.json.JSONResult"/>
+		</result-types>
+		 	<action name="ajax" class="com.eams.admin.action.CheckInfoAction">
+				<result name="success" type="json"></result>
+			</action>
+		</package> -->
+
+		<include file="admin/orginfostruts.xml"/>
+		<include file="admin/depinfostruts.xml"/>
+		<include file="admin/postinfostruts.xml"/>
+		<include file="admin/empinfostruts.xml"/>
+		<include file="admin/powerinfostruts.xml"/>
+		<include file="admin/gradeinfostruts.xml"/>
+		<include file="admin/classinfostruts.xml"/>
+		<include file="admin/scheduleinfostruts.xml"/>
+		<include file="admin/checkinfostruts.xml"/>
+		<include file="teacher/teaLevel-struts.xml"/>
+		<include file="teacher/teaInfo-struts.xml"/>
+		<include file="student/studentstruts.xml"/>
+		<include file="course/coursestruts.xml"/>
+		
+		
+</struts>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+		<package name="checkInfo" extends="struts-default">
+			<action name="checkInfo" class="com.eams.admin.action.CheckInfoAction">
+				<result name="showcheckinfo">/admin/check/showcheckinfo.jsp</result>
+				<result name="checkinfofalse">/admin/check/checkinfofalse.jsp</result>
+				<result name="checkinfosuccess">/admin/check/checkinfosuccess.jsp</result>
+				<result name="updatecheckinfo">/admin/check/updatecheckinfo.jsp</result>
+				<result name="addcheckinfo">/admin/check/addcheckinfo.jsp</result>
+				<result name="checkpage">/admin/check/checkpage.jsp</result>
+				<param name="savePath">/check</param>
+			</action>
+		</package>
+</struts>
